@@ -1,0 +1,5 @@
+FROM ubuntu:focal
+RUN apt-get update\
+ && apt-get -y dist-upgrade\
+ && apt-get -y install g++ make cmake clang-tidy\
+ && apt-get clean
