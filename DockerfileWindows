@@ -1,5 +1,4 @@
 FROM dockcross/windows-static-x64
 RUN apt-get update\
- && apt-get -y dist-upgrade\
- && apt-get -y install g++ make cmake clang-tidy\
+ && apt-get -y install clang-tidy\
  && apt-get clean
