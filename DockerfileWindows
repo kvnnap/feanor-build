@@ -1,4 +1,4 @@
 FROM dockcross/windows-static-x64
 RUN apt-get update\
- && apt-get -y install clang-tidy\
+ && apt-get -y install clang-tidy clang-format\
  && apt-get clean
