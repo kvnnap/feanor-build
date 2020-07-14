@@ -1,4 +1,6 @@
 FROM ubuntu:focal
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Malta
 RUN apt-get update\
  && apt-get -y dist-upgrade\
  && apt-get -y install g++ make cmake clang-tidy clang-format python libgl-dev libx11-dev xorg-dev nasm yasm\
